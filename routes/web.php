@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\App\Auth\LoginController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +23,17 @@ Route::name('darknine.')->group(function() {
     Route::get('/galeria', static function () {
         return view('gallery');
     })->name('gallery');
+
+
+    Route::name('auth.')->group(function() {
+        Route::get('/bejelentkezes', [LoginController::class, 'showLoginForm']);
+        Route::post('/bejelentkezes', [LoginController::class, 'login'])->name('login');
+    });
+
+    /*Route::get('/bejelentkezes', [\App\Http\Controllers\App\UserController::class, 'showLoginForm']);
+    Route::get('/regisztracio', [\App\Http\Controllers\App\UserController::class, 'showRegisterForm']);*/
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
