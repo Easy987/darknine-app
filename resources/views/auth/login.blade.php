@@ -1,17 +1,6 @@
-@include('partial/header')
-<body>
-<!-- preloader Start -->
-<div class="jb_preloader">
-    <div class="spinner_wrap">
-        <div class="spinner"></div>
-    </div>
-</div>
+@extends('layouts.app')
 
-<a href="javascript:" id="return-to-top"><i class="flaticon-up-arrow"></i></a>
-
-<div class="cp_navi_main_wrapper dm_cover">
-    @include('partial.menu')
-    <!-- top header wrapper start -->
+@section('content')
     <div class="page_title_section">
         <div class="page_title_overlay"></div>
         <div class="page_header">
@@ -34,7 +23,6 @@
             </div>
         </div>
     </div>
-</div>
 
 <div class="booking_table_wrapper dm_cover">
     <div class="container">
@@ -61,7 +49,7 @@
             </div>
             <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12 col-12">
                 <div class="booking_form_field" style="text-transform: none;">
-                    <form method="POST" action="{{ route('darknine.auth.login') }}">
+                    <form method="POST" action="{{ route('darknine.app.auth.login') }}">
                         @csrf
                         <div class="row">
                             <div class="col-md-6 col-sm-12" colspan="2" style="margin: auto;">
@@ -90,7 +78,7 @@
                                 <div class="tb_es_btn_div">
                                     <div class="response"></div>
                                     <div class="tb_es_btn_wrapper">
-                                        <button type="button" class="submitForm">bejelentkezés</button>
+                                        <button type="submit">bejelentkezés</button>
                                     </div>
                                 </div>
                             </div>
@@ -103,5 +91,4 @@
 </div>
 
 <div class="row" style="padding-bottom: 200px;"></div>
-
-@include('partial.footer')
+@endsection

@@ -17,7 +17,8 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = 'darknine.app.index';
+    public const LOGIN = 'darknine.app.auth.login';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.

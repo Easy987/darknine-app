@@ -1,33 +1,24 @@
 <?php
 
 use App\Http\Controllers\App\Auth\LoginController;
+use App\Http\Controllers\App\PageController;
+use App\Http\Controllers\App\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::name('darknine.app.')->group(function() {
 
-Route::name('darknine.')->group(function() {
-    Route::get('/', static function () {
-        return view('index');
-    })->name('index');
-
-    Route::get('/galeria', static function () {
-        return view('gallery');
-    })->name('gallery');
-
+    Route::get('/', [PageController::class, 'index'])->name('index');
+    Route::get('/rolunk', [PageController::class, 'about'])->name('about');
+    Route::get('/kapcsolat', [PageController::class, 'contact'])->name('contact');
+    Route::get('/galeria', [PageController::class, 'gallery'])->name('gallery');
+    Route::get('/profil', [UserController::class, 'index'])->name('profile');
 
     Route::name('auth.')->group(function() {
-        Route::get('/bejelentkezes', [LoginController::class, 'showLoginForm']);
+        Route::get('/bejelentkezes', [LoginController::class, 'showLoginForm'])->name('showLoginForm');
         Route::post('/bejelentkezes', [LoginController::class, 'login'])->name('login');
+
+        Route::get('/kijelentkezes', [LoginController::class, 'logout'])->name('logout');
     });
 
     /*Route::get('/bejelentkezes', [\App\Http\Controllers\App\UserController::class, 'showLoginForm']);
@@ -36,4 +27,3 @@ Route::name('darknine.')->group(function() {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

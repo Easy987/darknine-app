@@ -5,7 +5,7 @@ mix.options({ processCssUrls: false });
 
 fs.readdirSync('resources/js/').forEach(fileName => {
     if(fileName.indexOf('.js') > -1) {
-        mix.js(`resources/js/${fileName}`, 'public/assets/js');
+        //mix.js(`resources/js/${fileName}`, 'public/assets/js');
     }
 });
 

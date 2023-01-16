@@ -1,17 +1,6 @@
-@include('partial/header')
-<body>
-<!-- preloader Start -->
-<div class="jb_preloader">
-    <div class="spinner_wrap">
-        <div class="spinner"></div>
-    </div>
-</div>
+@extends('layouts.app')
 
-<!-- Top Scroll Start --><a href="javascript:" id="return-to-top"><i class="flaticon-up-arrow"></i></a>
-<!-- Top Scroll End -->
-<!--  navi wrapper Start -->
-<!-- slider wrapper start -->
-
+@section('top_content')
 <div class="slider_wrapper">
     <div id="rev_slider_149_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="snowaddon1"
          data-source="gallery" style="background-color:#000;padding:0px;">
@@ -317,12 +306,10 @@
         </div>
     </div>
 </div>
-<!-- slider wrapper end -->
-@include('partial.menu')
+@endsection
 
-<!-- about wrapper start-->
+@section('content')
 <div class="dm_about_wrapper dm_about_wrapper22 dm_cover">
-
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-6 col-sm-12 col-12 about_responsive_padder">
@@ -1214,6 +1201,4 @@
         </div>
     </div>
 </div>
-<!-- newsletter wrapper end-->
-<!--footer section start-->
-@include('partial.footer')
+@endsection

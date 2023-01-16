@@ -1,4 +1,22 @@
-@include('template/mobile-menu')
+<nav class="cd-dropdown  d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <h2><a href="javascript:void(0);"><img src="assets/images/logo1.png" alt="img"></a></h2>
+    <a href="#0" class="cd-close">Bezárás</a>
+    <ul class="cd-dropdown-content">
+        <li>
+            <form class="cd-search">
+                <input type="search" placeholder="Keresés...">
+            </form>
+        </li>
+
+        <li><a href="{{ route('darknine.app.index') }}">kezdőlap</a></li>
+        <li><a href="{{ route('darknine.app.about') }}">rólunk</a></li>
+        <li><a href="{{ route('darknine.app.gallery') }}">galéria</a></li>
+        <li><a href="https://www.facebook.com/D9.club.bp" target="_blank">facebook</a></li>
+        <li><a href="{{ route('darknine.app.contact') }}">kapcsolat</a></li>
+        <li><a href="{{ route('darknine.app.auth.login') }}">fiók</a></li>
+    </ul>
+    <!-- .cd-dropdown-content -->
+</nav>
 <div class="container">
 
     <!-- mobile menu area start -->
@@ -47,14 +65,29 @@
                                 </g>
                             </svg>
                     </a>
-                    <!-- .cd-dropdown -->
-
                 </div>
             </div>
         </div>
-
     </header>
 
-    @include('template/menu')
+    <div class="jb_navigation_wrapper index2_wrapper_navigation">
+        <div class="mainmenu index2_mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
+            <ul class="main_nav_ul index2_main_nav_ul">
+                <li><a href="{{ route('darknine.app.index') }}" class="gc_main_navigation">kezdőlap</a></li>
+                <li><a href="{{ route('darknine.app.about') }}" class="gc_main_navigation">rólunk</a></li>
+                <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">galéria</a></li>
+                <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">tokenek</a></li>
+                <li class="logo_desing_wrapper index2_logo_wrapper">
+                    <a href="javascript:void(0);"><img src="assets/images/logo2.png" alt="img"></a>
+                </li>
+                <li><a href="https://www.facebook.com/D9.club.bp" target="_blank"
+                       class="gc_main_navigation">facebook</a></li>
+                <li><a href="{{ route('darknine.app.contact') }}" class="gc_main_navigation">kapcsolat</a></li>
+                <li><a href="{{ route('darknine.app.profile') }}" class="gc_main_navigation">fiók</a></li>
+                @auth
+                <li><a href="{{ route('darknine.app.auth.logout') }}" class="gc_main_navigation">kijelentkezés</a></li>
+                @endauth
+            </ul>
+        </div>
+    </div>
 </div>
-<!-- navi wrapper End -->
