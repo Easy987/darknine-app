@@ -21,4 +21,3 @@ mix.css('resources/css/player.css', 'public/assets/css');
 mix.css('resources/css/reset.css', 'public/assets/css');
 mix.css('resources/css/responsive.css', 'public/assets/css');
 mix.css('resources/css/style.css', 'public/assets/css');
-

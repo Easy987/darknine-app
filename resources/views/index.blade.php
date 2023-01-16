@@ -15,7 +15,7 @@
                     data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                     data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/new/hall_1.jpg" alt="" data-bgposition="center center" data-kenburns="on"
+                    <img src="assets/images/new/carousel/hall_1.jpg" alt="" data-bgposition="center center" data-kenburns="on"
                          data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100"
                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                          data-bgparallax="6" class="rev-slidebg" data-no-retina>
@@ -89,7 +89,7 @@
                                      data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                      data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                      style="z-index: 9; white-space: normal; font-size: 20px; line-height: 40px; font-weight: 300; color: rgba(255, 255, 255, 1.00); display: block;font-family:Poppins;">
-                                    Gyere bulizni velünk ma este!
+                                        Az underground techno élmény
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                     data-title="Two" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
                     data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/new/hall_2.jpg" alt="" data-bgposition="center center" data-kenburns="on"
+                    <img src="assets/images/new/carousel/hall_2.jpg" alt="" data-bgposition="center center" data-kenburns="on"
                          data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100"
                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                          data-bgparallax="6" class="rev-slidebg" data-no-retina>
@@ -186,7 +186,7 @@
                                      data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                      data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                      style="z-index: 9; white-space: normal; font-size: 20px; line-height: 40px; font-weight: 300; color: rgba(255, 255, 255, 1.00); display: block;font-family:Poppins;">
-                                    Vessz el a ritmusban nálunk!
+                                    Gyere bulizni velünk ma este!
                                 </div>
                             </div>
                         </div>
@@ -210,7 +210,7 @@
                     data-title="Three" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
                     data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/new/hall_3.jpg" alt="" data-bgposition="center center" data-kenburns="on"
+                    <img src="assets/images/new/carousel/hall_3.jpg" alt="" data-bgposition="center center" data-kenburns="on"
                          data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100"
                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                          data-bgparallax="6" class="rev-slidebg" data-no-retina>
@@ -340,14 +340,14 @@
                         Ez a Dark Nine.
                     </p>
                     <ul class="dm_about_link dm_cover">
-                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Kiváló basszus</a></li>
-                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Profi fénytechnika</a></li>
-                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Összesen 3 stage</a></li>
+                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> 1500m2 terület</a></li>
+                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Egyedi fény és hangtechnika</a></li>
+                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Összesen 3 táncterem</a></li>
                         <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Felejthetetlen hangulat</a></li>
                     </ul>
                     <div class="hs_btn_wrapper dm_cover">
                         <ul>
-                            <li><a href="javascript:void(0);">részletek</a></li>
+                            <li><a href="{{ route('darknine.app.about') }}">részletek</a></li>
                         </ul>
                     </div>
                 </div>

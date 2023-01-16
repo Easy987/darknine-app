@@ -78,7 +78,7 @@
                 <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">galéria</a></li>
                 <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">tokenek</a></li>
                 <li class="logo_desing_wrapper index2_logo_wrapper">
-                    <a href="javascript:void(0);"><img src="assets/images/logo2.png" alt="img"></a>
+                    <a href="javascript:void(0);"><img src="assets/images/new/logo.jpeg" style="height: 64px;" alt="img"></a>
                 </li>
                 <li><a href="https://www.facebook.com/D9.club.bp" target="_blank"
                        class="gc_main_navigation">facebook</a></li>
