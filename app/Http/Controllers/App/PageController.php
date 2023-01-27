@@ -9,21 +9,16 @@ class PageController extends Controller
 {
     public function index(): View
     {
-        return view('index');
+        return view('pages.index');
     }
 
     public function about(): View
     {
-        return view('index');
+        return view('pages.about');
     }
 
     public function contact(): View
     {
-        return view('index');
-    }
-
-    public function gallery(): View
-    {
-        return view('gallery');
+        return view('pages.index');
     }
 }

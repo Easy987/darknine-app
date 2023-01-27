@@ -91,23 +91,16 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-12 col-sm-12">
                 <div class="footer_copyright">
-                    <p>© 2020 <a href="javascript:void(0);">club-couture</a> html template. created by <a href="javascript:void(0);">webstrot.</a></p>
+                    <p>© {{ date('Y') }} <a href="javascript:void(0);">D9 Dark Nine</a></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-12 col-sm-12">
                 <div class="footer_icon_link">
                     <ul>
-                        <li><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                        <li><a href="https://www.facebook.com/D9.club.bp"><i class="fab fa-facebook-f"></i></a>
                         </li>
-                        <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                        <li><a href="https://www.instagram.com/d9.dark.nine"><i class="fab fa-instagram"></i></a>
                         </li>
-
-                        <li><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-
-                        <li><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a>
-                        </li>
-
                     </ul>
                 </div>
             </div>

@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Dark Nine</title>
+    <title>{{ config('app.name') }}</title>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="description" content="Dark Nine Night Club"/>
-    <meta name="keywords" content="Club, Disco, Diszkó, Dark Nine, D9, Budapest, Night Club, Bar, DJ"/>
+    <meta name="keywords" content="Club, Disco, Diszkó, D9 Dark Nine, Dark Nine, D9, Budapest, Night Club, Bar, DJ"/>
     <meta name="author" content=""/>
     <meta name="MobileOptimized" content="320"/>
     <!--Template style -->

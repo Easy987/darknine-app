@@ -1,5 +1,5 @@
 <nav class="cd-dropdown  d-block d-sm-block d-md-block d-lg-none d-xl-none">
-    <h2><a href="javascript:void(0);"><img src="assets/images/logo1.png" alt="img"></a></h2>
+    <h2><a href="javascript:void(0);"><img src="assets/images/new/logo/logo_64.png" alt="img"></a></h2>
     <a href="#0" class="cd-close">Bezárás</a>
     <ul class="cd-dropdown-content">
         <li>
@@ -26,7 +26,7 @@
             <div class="col-md-6">
                 <div class="cp_logo_wrapper">
                     <a href="javascript:void(0);">
-                        <img src="assets/images/logo1.png" alt="logo">
+                        <img src="assets/images/new/logo/logo_64.png" alt="logo">
                     </a>
                 </div>
             </div>
@@ -76,9 +76,8 @@
                 <li><a href="{{ route('darknine.app.index') }}" class="gc_main_navigation">kezdőlap</a></li>
                 <li><a href="{{ route('darknine.app.about') }}" class="gc_main_navigation">rólunk</a></li>
                 <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">galéria</a></li>
-                <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">tokenek</a></li>
                 <li class="logo_desing_wrapper index2_logo_wrapper">
-                    <a href="javascript:void(0);"><img src="assets/images/new/logo.jpeg" style="height: 64px;" alt="img"></a>
+                    <a href="javascript:void(0);"><img src="assets/images/new/logo/logo.png" style="height: 64px;" alt="img"></a>
                 </li>
                 <li><a href="https://www.facebook.com/D9.club.bp" target="_blank"
                        class="gc_main_navigation">facebook</a></li>
