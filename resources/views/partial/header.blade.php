@@ -24,19 +24,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="assets/css/player.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css"
+          href="assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css"
+          href="assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css"
+          href="assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
 
-    @if(\Illuminate\Support\Facades\Request::is('/'))
-        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css?version=<?=config('app.version')?>">
-        <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
-        <link rel="stylesheet" type="text/css" href="assets/css/player.css?version=<?=config('app.version')?>">
-        <link rel="stylesheet" type="text/css"
-              href="assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
-        <link rel="stylesheet" type="text/css"
-              href="assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
-        <link rel="stylesheet" type="text/css"
-              href="assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
-
-    @endif
     <!--favicon-->
 
 

@@ -126,18 +126,16 @@ header {
 }
 .cd-dropdown h2 {
   /* dropdown title - mobile version only */
+margin-top: 7px;
   position: relative;
   z-index: 1;
   position:relative;
-  line-height: 90px;
-  height:95px;
   background: #111;
-  padding-left:30px;
 }
 .cd-dropdown h2 a{
-	    color: #004165;
-    font-size: 16px;
-    font-weight: 400;
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: 800;
 }
 .cd-dropdown h2 span{
 	color:#23c0e9;

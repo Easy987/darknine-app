@@ -167,41 +167,38 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="partner_wrapper_content">
-                                    <i class="flaticon-star"></i>
+                                    <i class="fa fa-star"></i>
                                     <p><a href="javascript:void(0);">VIP Zone</a></p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="partner_wrapper_content">
-                                    <i class="flaticon-hookah"></i>
-                                    <p><a href="javascript:void(0);">hookah</a></p>
+                                    <i class="fa fa-user"></i>
+                                    <p><a href="javascript:void(0);">ruhatár</a></p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="partner_wrapper_content">
-                                    <i class="flaticon-tray"></i>
-                                    <p><a href="javascript:void(0);">restaurant</a></p>
+                                    <i class="fa fa-money-bill"></i>
+                                    <p><a href="javascript:void(0);">tokenek</a></p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="partner_wrapper_content">
-                                    <i class="flaticon-wine"></i>
-                                    <p><a href="javascript:void(0);">bar</a></p>
-
+                                    <i class="fa fa-wine-glass"></i>
+                                    <p><a href="javascript:void(0);">bár</a></p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="partner_wrapper_content">
-                                    <i class="flaticon-sofa"></i>
-                                    <p><a href="javascript:void(0);">launge area</a></p>
-
+                                    <i class="fa fa-couch"></i>
+                                    <p><a href="javascript:void(0);">pihenőszoba</a></p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="partner_wrapper_content">
-                                    <i class="flaticon-floor"></i>
-                                    <p><a href="javascript:void(0);">dance floor</a></p>
-
+                                    <i class="fa fa-music"></i>
+                                    <p><a href="javascript:void(0);">táncterem</a></p>
                                 </div>
                             </div>
 

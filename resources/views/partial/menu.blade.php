@@ -1,17 +1,11 @@
 <nav class="cd-dropdown  d-block d-sm-block d-md-block d-lg-none d-xl-none">
-    <h2><a href="javascript:void(0);"><img src="assets/images/new/logo/logo_64.png" alt="img"></a></h2>
+    <h2><a href="javascript:void(0);">D9 Dark Nine</a></h2>
     <a href="#0" class="cd-close">Bezárás</a>
     <ul class="cd-dropdown-content">
-        <li>
-            <form class="cd-search">
-                <input type="search" placeholder="Keresés...">
-            </form>
-        </li>
-
         <li><a href="{{ route('darknine.app.index') }}">kezdőlap</a></li>
         <li><a href="{{ route('darknine.app.about') }}">rólunk</a></li>
         <li><a href="{{ route('darknine.app.gallery') }}">galéria</a></li>
-        <li><a href="https://www.facebook.com/D9.club.bp" target="_blank">facebook</a></li>
+        <li><a href="https://www.facebook.com/D9.club.bp" target="_blank">események</a></li>
         <li><a href="{{ route('darknine.app.contact') }}">kapcsolat</a></li>
         <li><a href="{{ route('darknine.app.auth.login') }}">fiók</a></li>
     </ul>
@@ -21,12 +15,12 @@
 
     <!-- mobile menu area start -->
     <header class="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
-
         <div class="row">
             <div class="col-md-6">
                 <div class="cp_logo_wrapper">
                     <a href="javascript:void(0);">
                         <img src="assets/images/new/logo/logo_64.png" alt="logo">
+                        D9 Dark Nine
                     </a>
                 </div>
             </div>
@@ -80,7 +74,7 @@
                     <a href="javascript:void(0);"><img src="assets/images/new/logo/logo.png" style="height: 64px;" alt="img"></a>
                 </li>
                 <li><a href="https://www.facebook.com/D9.club.bp" target="_blank"
-                       class="gc_main_navigation">facebook</a></li>
+                       class="gc_main_navigation">események</a></li>
                 <li><a href="{{ route('darknine.app.contact') }}" class="gc_main_navigation">kapcsolat</a></li>
                 <li><a href="{{ route('darknine.app.profile') }}" class="gc_main_navigation">fiók</a></li>
                 @auth
