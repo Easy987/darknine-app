@@ -7,6 +7,7 @@ use App\Models\User\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -44,7 +45,12 @@ class SocialController extends Controller
 
                 $userExists = User::where('email', $socialUserEmail)->whereNotNull('social_id')->exists();
                 if($userExists) {
-                    dd('diff provider');
+                    $validator = Validator::make([], [
+                        'email' => 'required'
+                    ], [
+                        'email.required' => 'Kérjük, azzal a közösségi fiókkal jelentkezz be, amivel regisztráltál.'
+                    ]);
+                    return redirect()->route(RouteServiceProvider::LOGIN)->withErrors($validator);
                 }
 
                 $createdUser = User::create([
@@ -52,7 +58,7 @@ class SocialController extends Controller
                     'email' => $socialUserEmail,
                     'social_id' => $socialUserId,
                     'social_type' => $provider,
-                    'password' => encrypt('')
+                    'password' => encrypt(Str::random())
                 ]);
 
                 Auth::login($createdUser);

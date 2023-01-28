@@ -12,25 +12,34 @@
     <meta name="author" content=""/>
     <meta name="MobileOptimized" content="320"/>
     <!--Template style -->
+
+
+
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/player.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css"
-          href="assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css"
-          href="assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css"
-          href="assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?version=<?=config('app.version')?>"/>
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css?version=<?=config('app.version')?>"/>
+
+    @if(\Illuminate\Support\Facades\Request::is('/'))
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css?version=<?=config('app.version')?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/player.css?version=<?=config('app.version')?>">
+        <link rel="stylesheet" type="text/css"
+              href="assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
+        <link rel="stylesheet" type="text/css"
+              href="assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
+        <link rel="stylesheet" type="text/css"
+              href="assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
+
+    @endif
     <!--favicon-->
+
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">

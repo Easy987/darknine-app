@@ -51,37 +51,38 @@
                 <div class="booking_form_field" style="text-transform: none;">
                     <form method="POST" action="{{ route('darknine.app.auth.login') }}">
                         @csrf
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12" colspan="2" style="margin: auto;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-pos form_field">
-                                            <div class="form-group i-name">
-                                                <input style="text-transform: none" type="text" class="form-control require" name="email" required="" placeholder="Email cím*">
-                                                <i class="fas fa-user"></i>
-                                            </div>
-                                        </div>
+                        <div id="logreg-forms">
+                            <form class="form-signin" style="text-transform: none">
+                                <div class="row social-login">
+                                    <div class="col-lg-6 col-12 text-center">
+                                        <a href="{{ route('darknine.app.auth.social.redirect', ['provider' => 'facebook']) }}">
+                                            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f" style="margin-right: 5px;"></i> Bejelentkezés Facebook fiókkal</span> </button>
+                                        </a>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-pos form_field">
-                                            <div class="form-group i-name">
-                                                <input style="text-transform: none" type="text" class="form-control require" name="password" required="" placeholder="Jelszó*">
-                                                <i class="fas fa-lock"></i>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-6 col-12 text-center mt-lg-0 mt-1">
+                                        <a href="{{ route('darknine.app.auth.social.redirect', ['provider' => 'google']) }}">
+                                            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google" style="margin-right: 5px"></i> Bejelentkezés Google fiókkal</span> </button>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="tb_es_btn_div">
-                                    <div class="response"></div>
-                                    <div class="tb_es_btn_wrapper">
-                                        <button type="submit">bejelentkezés</button>
-                                    </div>
-                                </div>
-                            </div>
+                                <br>
+                                <p style="text-align:center"> VAGY  </p>
+                                <br>
+                                @error('email')
+                                <span class="text-danger" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+                                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email cím" required="" autofocus="">
+                                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Jelszó" required="">
+
+                                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Bejelentkezés</button>
+                                <a href="#" id="forgot_pswd">Elfelejtett jelszó?</a>
+                                <hr>
+                                <!-- <p>Don't have an account!</p>  -->
+                                <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Új fiók létrehozása</button>
+                            </form>
                         </div>
                     </form>
                 </div>
