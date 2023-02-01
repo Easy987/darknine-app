@@ -5,6 +5,7 @@ use App\Http\Controllers\App\PageController;
 use App\Http\Controllers\App\UserController;
 use App\Http\Controllers\App\GalleryController;
 use App\Http\Controllers\App\Auth\SocialController;
+use App\Http\Controllers\App\Auth\RegisterController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,9 @@ Route::name('darknine.app.')->group(function() {
     Route::get('/profil', [UserController::class, 'index'])->name('profile');
 
     Route::name('auth.')->group(function() {
+        Route::get('/regisztracio', [RegisterController::class, 'showRegistrationForm'])->name('showRegistrationForm');
+        Route::post('/regisztracio', [RegisterController::class, 'register'])->name('register');
+
         Route::get('/bejelentkezes', [LoginController::class, 'showLoginForm'])->name('showLoginForm');
         Route::post('/bejelentkezes', [LoginController::class, 'login'])->name('login');
 

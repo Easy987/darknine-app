@@ -8,6 +8,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\View\View;
 
 class RegisterController extends Controller
 {
@@ -19,6 +20,11 @@ class RegisterController extends Controller
         $this->redirectTo = route(RouteServiceProvider::HOME);
     }
 
+    public function showRegistrationForm(): View
+    {
+        return view('auth.register');
+    }
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -28,7 +34,7 @@ class RegisterController extends Controller
         ]);
     }
 
-    protected function create(array $data)
+    protected function create(array $data): User
     {
         return User::create([
             'name' => $data['name'],

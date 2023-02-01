@@ -81,7 +81,7 @@
                                 <a href="#" id="forgot_pswd">Elfelejtett jelszó?</a>
                                 <hr>
                                 <!-- <p>Don't have an account!</p>  -->
-                                <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Új fiók létrehozása</button>
+                                <a href="{{ route('darknine.app.auth.showRegistrationForm') }}"><button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Új fiók létrehozása</button></a>
                             </form>
                         </div>
                     </form>
