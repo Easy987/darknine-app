@@ -8,6 +8,6 @@ class Permission extends \Spatie\Permission\Models\Permission
 {
     use HasUuids;
 
-    protected $keyType = 'string';
     public $incrementing = false;
+    protected $keyType = 'string';
 }

@@ -5,13 +5,12 @@ namespace App\Http\Controllers\App;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\View\View;
 
 class UserController extends Controller
 {
     public function index(): RedirectResponse
     {
-        if(auth()->check()) {
+        if (auth()->check()) {
             return redirect()->route(RouteServiceProvider::HOME);
         }
 

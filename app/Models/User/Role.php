@@ -8,6 +8,6 @@ class Role extends \Spatie\Permission\Models\Role
 {
     use HasUuids;
 
-    protected $keyType = 'string';
     public $incrementing = false;
+    protected $keyType = 'string';
 }

@@ -26,7 +26,7 @@ class VerificationController extends Controller
 
     public function verify(Request $request)
     {
-        $request->setUserResolver(function () use ($request) {
+        $request->setUserResolver(function() use ($request) {
             return User::findOrFail($request->route('id'));
         });
         return $this->originalVerify($request);

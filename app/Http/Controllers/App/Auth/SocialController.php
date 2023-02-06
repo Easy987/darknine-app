@@ -22,7 +22,7 @@ class SocialController extends Controller
 
     public function redirect(string $provider): RedirectResponse
     {
-        if(Str::contains($provider, $this->enabledSocialProviders)) {
+        if (Str::contains($provider, $this->enabledSocialProviders)) {
             return Socialite::driver($provider)->redirect();
         }
 
@@ -31,7 +31,7 @@ class SocialController extends Controller
 
     public function login(string $provider)
     {
-        if(Str::contains($provider, $this->enabledSocialProviders)) {
+        if (Str::contains($provider, $this->enabledSocialProviders)) {
             try {
                 $socialUser = Socialite::driver($provider)->user();
                 $socialUserId = $socialUser->getId();
@@ -44,7 +44,7 @@ class SocialController extends Controller
                 }
 
                 $userExists = User::where('email', $socialUserEmail)->whereNotNull('social_id')->exists();
-                if($userExists) {
+                if ($userExists) {
                     $validator = Validator::make([], [
                         'email' => 'required'
                     ], [
@@ -54,7 +54,7 @@ class SocialController extends Controller
                 }
 
                 $userExists = User::where('email', $socialUserEmail)->whereNull('social_id')->exists();
-                if($userExists) {
+                if ($userExists) {
                     $validator = Validator::make([], [
                         'email' => 'required'
                     ], [
