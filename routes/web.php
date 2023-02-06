@@ -3,6 +3,7 @@
 use App\Http\Controllers\App\Auth\LoginController;
 use App\Http\Controllers\App\PageController;
 use App\Http\Controllers\App\UserController;
+use App\Http\Controllers\App\NewsletterController;
 use App\Http\Controllers\App\GalleryController;
 use App\Http\Controllers\App\Auth\SocialController;
 use App\Http\Controllers\App\Auth\RegisterController;
@@ -25,6 +26,7 @@ Route::name('darknine.app.')->group(function() {
     Route::get('/kapcsolat', [PageController::class, 'contact'])->name('contact');
     Route::get('/galeria', [GalleryController::class, 'index'])->name('gallery');
     Route::get('/profil', [UserController::class, 'index'])->name('profile');
+    Route::post('/feliratkozas', [NewsletterController::class, 'subscribe'])->name('subscribe');
 
     Route::name('auth.')->group(function() {
         Route::get('/regisztracio', [RegisterController::class, 'showRegistrationForm'])->name('showRegistrationForm');

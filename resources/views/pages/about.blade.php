@@ -116,7 +116,7 @@
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">Pihenőszoba</a></h1>
-                                <p>A klub pihenőszobája lehetőséget biztosít egy kis pihenésre.</p>
+                                <p>A klub pihenőszobája lehetőséget biztosít egy kis feltöltődésre.</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">VIP szoba</a></h1>
-                                <p>A klub VIP szobájában exkluzív pihenésben lehet részed.</p>
+                                <p>A klub VIP szobájában exkluzív élményben lehet részed.</p>
                             </div>
                         </div>
                         <div class="offer_left_content_wrapper dm_cover">

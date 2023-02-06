@@ -7,7 +7,12 @@
         <li><a href="{{ route('darknine.app.gallery') }}">galéria</a></li>
         <li><a href="https://www.facebook.com/D9.club.bp" target="_blank">események</a></li>
         <li><a href="{{ route('darknine.app.contact') }}">kapcsolat</a></li>
-        <li><a href="{{ route('darknine.app.auth.login') }}">fiók</a></li>
+        @auth
+            <li><a href="{{ route('darknine.app.profile') }}">profil</a></li>
+        @else
+            <li><a href="{{ route('darknine.app.auth.login') }}">fiók</a></li>
+        @endauth
+
     </ul>
     <!-- .cd-dropdown-content -->
 </nav>
@@ -76,7 +81,13 @@
                 <li><a href="https://www.facebook.com/D9.club.bp" target="_blank"
                        class="gc_main_navigation">események</a></li>
                 <li><a href="{{ route('darknine.app.contact') }}" class="gc_main_navigation">kapcsolat</a></li>
-                <li><a href="{{ route('darknine.app.profile') }}" class="gc_main_navigation">fiók</a></li>
+
+                @auth
+                    <li><a href="{{ route('darknine.app.profile') }}" class="gc_main_navigation">profil</a></li>
+                @else
+                    <li><a href="{{ route('darknine.app.profile') }}" class="gc_main_navigation">fiók</a></li>
+                @endauth
+
                 @auth
                 <li><a href="{{ route('darknine.app.auth.logout') }}" class="gc_main_navigation">kijelentkezés</a></li>
                 @endauth

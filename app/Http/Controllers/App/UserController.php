@@ -8,10 +8,10 @@ use Illuminate\Http\RedirectResponse;
 
 class UserController extends Controller
 {
-    public function index(): RedirectResponse
+    public function index()
     {
         if (auth()->check()) {
-            return redirect()->route(RouteServiceProvider::HOME);
+            return view('user.profile');
         }
 
         return redirect()->route(RouteServiceProvider::LOGIN);

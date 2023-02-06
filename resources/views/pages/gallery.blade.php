@@ -27,7 +27,7 @@
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                         <div class="sub_title_section">
                             <ul class="sub_title">
-                                <li><a href="#"> Kezdőlap &nbsp; / &nbsp;</a></li>
+                                <li><a href="{{ route('darknine.app.index') }}"> Kezdőlap &nbsp; / &nbsp;</a></li>
                                 <li>galéria</li>
                             </ul>
                         </div>

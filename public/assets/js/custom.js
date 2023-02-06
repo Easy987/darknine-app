@@ -3,21 +3,21 @@
 
     var tpj = jQuery;
     var revapi24;
-	
-	
+
+
   	//------ preloader js ------//
     jQuery(window).on('load', function() {
 			setTimeout(function(){
 			jQuery('.jb_preloader').addClass('loaded');
 		}, 1000);
 		});
-	
-	
+
+
 	 //---- on ready function -----//
     jQuery(document).ready(function($) {
-	
-			
-	
+
+
+
         // ===== Scroll to Top ==== //
         $(window).scroll(function() {
             if ($(this).scrollTop() >= 100) {
@@ -31,14 +31,14 @@
                 scrollTop: 0
             }, 500);
         });
-		
-		
-		
+
+
+
 			//----- Main Slider Animation -----//
 
 				(function($) {
 
-            //Function to animate slider captions 
+            //Function to animate slider captions
             function doAnimations(elems) {
                 //Cache the animationend event in a variable
                 var animEndEv = 'webkitAnimationEnd animationend';
@@ -52,21 +52,21 @@
                 });
             }
 
-            //Variables on page load 
+            //Variables on page load
             var $myCarousel = $('#carousel-example-generic'),
                 $firstAnimatingElems = $myCarousel.find('.carousel-item:first').find("[data-animation ^= 'animated']");
 
-            //Initialize carousel 
+            //Initialize carousel
             $myCarousel.carousel();
 
-            //Animate captions in first slide on page load 
+            //Animate captions in first slide on page load
             doAnimations($firstAnimatingElems);
 
-            //Pause carousel  
+            //Pause carousel
             $myCarousel.carousel('pause');
 
 
-            //Other slides to be animated on carousel slide event 
+            //Other slides to be animated on carousel slide event
             $myCarousel.on('click slide.bs.carousel', function(e) {
                 var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
                 doAnimations($animatingElems);
@@ -74,9 +74,9 @@
 
 
         })(jQuery);
-		
 
-			
+
+
 			  	//*------ category job slider js -----*//
 				$(document).ready(function() {
               $('.partner_wrapper .owl-carousel').owlCarousel({
@@ -104,10 +104,10 @@
                 }
               })
             })
-			
+
 			// Magnific popup-video
 
-	$('.test-popup-link').magnificPopup({ 
+	$('.test-popup-link').magnificPopup({
     type: 'iframe',
     iframe: {
         markup: '<div class="mfp-iframe-scaler">'+
@@ -117,7 +117,7 @@
             '</div>',
         patterns: {
             youtube: {
-                index: 'youtube.com/', 
+                index: 'youtube.com/',
                 id: 'v=',
                 src: 'https://www.youtube.com/embed/ryzOXAO0Ss0'
             }
@@ -127,7 +127,7 @@
 });
 
 	//----------- upcoming events slider js -------------//
-	
+
 	$(document).ready(function() {
               $('.upcoming_event_slider .owl-carousel').owlCarousel({
                 loop: true,
@@ -158,10 +158,10 @@
                 }
               })
             })
-		
-		
+
+
 		//----------- about us slider js -------------//
-	
+
 	$(document).ready(function() {
               $('.about_us_slider_wrapper .owl-carousel').owlCarousel({
                 loop: true,
@@ -192,23 +192,23 @@
                 }
               })
             })
-		
-		
+
+
  //**----- portfolio wrapper js -------**//
- 
+
     function protfolioIsotope(){
-        if ( $('.protfolio_area, .portfolio_grid').length ){ 
+        if ( $('.protfolio_area, .portfolio_grid').length ){
             // Activate isotope in container
             $(".protfoli_inner, .portfoli_inner").imagesLoaded( function() {
                 $(".protfoli_inner, .portfoli_inner").isotope({
-                    layoutMode: 'masonry',  
-                }); 
-            });  
-            
-            // Add isotope click function 
+                    layoutMode: 'masonry',
+                });
+            });
+
+            // Add isotope click function
             $(".protfoli_filter li").on('click',function(){
                 $(".protfoli_filter li").removeClass("active");
-                $(this).addClass("active"); 
+                $(this).addClass("active");
                 var selector = $(this).attr("data-filter");
                 $(".protfoli_inner, .portfoli_inner").isotope({
                     filter: selector,
@@ -219,15 +219,15 @@
                     }
                 });
                 return false;
-            });  
+            });
         };
-    }; 
- protfolioIsotope (); 
- 
- 
- 
+    };
+ protfolioIsotope ();
+
+
+
  //*------ zoom popup js code ------*//
-  
+
 			     $('.zoom_popup').magnificPopup({
             delegate: 'a',
             type: 'image',
@@ -247,7 +247,7 @@
         });
 
 			//----------- blog slider js -------------//
-	
+
 	$(document).ready(function() {
               $('.blog_slider_wrapper .owl-carousel').owlCarousel({
                 loop: true,
@@ -278,8 +278,8 @@
                 }
               })
             })
-					
-		 //----- counter js -----// 
+
+		 //----- counter js -----//
 
 			$('.counter_section').on('inview', function(event, visible, visiblePartX, visiblePartY) {
 				if (visible) {
@@ -296,10 +296,10 @@
 					$(this).off('inview');
 				}
 			});
-					
-			
+
+
 			//----------- partner slider js -------------//
-	
+
 	$(document).ready(function() {
               $('.partner_item_slider .owl-carousel').owlCarousel({
                 loop: true,
@@ -330,9 +330,9 @@
                 }
               })
             })
-							
+
 			//----------- DJ night slider js -------------//
-	
+
 	$(document).ready(function() {
               $('.night_club_slider .owl-carousel').owlCarousel({
                 loop: true,
@@ -363,10 +363,10 @@
                 }
               })
             })
-			
-			
-			
-			
+
+
+
+
 		 $(document).ready(function() {
             $('.dm_testi_slider_main_wrapper .owl-carousel').owlCarousel({
                 loop: true,
@@ -394,9 +394,9 @@
                 }
             })
         })
-		
-			
-				
+
+
+
 	/* ------ hover images js ------ */
 	function imgHover(){
 		$(".tg-postlistitem > div").hover(function(){
@@ -410,9 +410,9 @@
 		});
 	}
 	imgHover();
-			
-			
-			
+
+
+
 	/*--------------------------
  counterdown
 ---------------------------- */
@@ -433,8 +433,8 @@
 		date: e(),
 	    offset: 16
 	});
-				
-			
+
+
 	//----- Contact Form Submition ------//
 	function checkRequire(formId , targetResp){
 		targetResp.html('');
@@ -477,34 +477,7 @@
 		});
 		return check;
 	}
-	$(".submitForm").on("click", function() {
-		var _this = $(this);
-		var targetForm = _this.closest('form');
-		var errroTarget = targetForm.find('.response');
-		var check = checkRequire(targetForm , errroTarget);
-		if(check == 0){
-			var formDetail = new FormData(targetForm[0]);
-			formDetail.append('form_type' , _this.attr('form-type'));
-			$.ajax({
-				method : 'post',
-				url : 'ajax.php',
-				data:formDetail,
-				cache:false,
-				contentType: false,
-				processData: false
-			}).done(function(resp){
-				if(resp == 1){
-					targetForm.find('input').val('');
-					targetForm.find('textarea').val('');
-					errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
-				}else{
-					errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
-				}
-			});
-		}
-	});
-
 
  });
 
-})(jQuery);	
+})(jQuery);

@@ -4,15 +4,15 @@
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="footer_about_content">
                     <div class="footer_img_logo">
-                        <a href="#"><img src="{{ config('app.url') }}/assets/images/logo2.png" class="img-responsive" alt="logo"/></a>
+                        <a href="{{ route('darknine.app.index') }}"><img src="{{ config('app.url') }}/assets/images/new/logo/logo_64.png" class="img-responsive" alt="logo"/></a>
                     </div>
                     <div class="footer_abotus_content">
-                        <p>It is a long established fact that the reader wilcted by the readable cent of a the me page
-                            part.</p>
-                        <p>Lorem Ipsum is that it has aor-less normal distrion. </p>
+                        <p>A D9 egy különleges hely Budapest IX. kerületében, ahol az underground techno zene és az industrial hangulat találkozik.</p>
+                        <p>Látogass el hozzánk, hogy átélhesd az igazi techno élményt a D9 falai között!
+                            </p>
                     </div>
                     <div class="footer_aboutus_link">
-                        <a href="#">Read More...</a>
+                        <a href="{{ route('darknine.app.about') }}">részletek...</a>
                     </div>
 
                 </div>
@@ -44,19 +44,16 @@
             </div>
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="wrapper_second_useful footer_heading">
-                    <h4>gallery</h4>
+                    <h4>galéria</h4>
                     <div class="footer_gallary">
                         <div class="row">
                             <ul>
-                                <li><img src="{{ config('app.url') }}/assets/images/ft1.png" alt="img" class="img-responsive">
-                                </li>
-                                <li><img src="{{ config('app.url') }}/assets/images/ft2.png" alt="img" class="img-responsive">
-                                </li>
-                                <li><img src="{{ config('app.url') }}/assets/images/ft3.png" alt="img" class="img-responsive">
-                                </li>
-                                <li><img src="{{ config('app.url') }}/assets/images/ft4.png" alt="img" class="img-responsive"></li>
-                                <li><img src="{{ config('app.url') }}/assets/images/ft5.png" alt="img" class="img-responsive"></li>
-                                <li><img src="{{ config('app.url') }}/assets/images/ft6.png" alt="img" class="img-responsive"></li>
+                                @php
+                                    $images = \App\Models\Gallery\GalleryImage::inRandomOrder()->limit(6)->get();
+                                @endphp
+                                @foreach($images as $image)
+                                    <li><img height="75" width="75" src="{{ $image->file_path }}" alt="img" class="img-responsive"></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -65,18 +62,18 @@
 
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="wrapper_second_contact footer_heading">
-                    <h4>contact us</h4>
+                    <h4>kapcsolat</h4>
 
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i><span>512 - omexcity, California</span>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Budapest, Zombori utca 16</span>
                         </li>
-                        <li><i class="fas fa-globe"></i><a href="#">www.example.com</a>
+                        <li><i class="fas fa-globe"></i><a href="{{ config('app.url') }}">{{ config('app.url') }}</a>
 
                         </li>
-                        <li><i class="fa fa-phone"></i><span>+65 1800-123-145</span>
+                        <li><i class="fa fa-phone"></i><span>+36 1 123-4567</span>
 
                         </li>
-                        <li><i class="fa fa-envelope"></i><a href="#">club-couture@example.com</a>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:darknine.contact@gmail.com">darknine.contact@gmail.com</a>
                         </li>
 
                     </ul>
@@ -91,7 +88,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-12 col-sm-12">
                 <div class="footer_copyright">
-                    <p>© {{ date('Y') }} <a href="javascript:void(0);">D9 Dark Nine</a></p>
+                    <p>© {{ date('Y') }} <a href="{{ route('darknine.app.index') }}">D9 Dark Nine</a></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-12 col-sm-12">

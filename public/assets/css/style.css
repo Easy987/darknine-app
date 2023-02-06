@@ -4078,3 +4078,6 @@ audio {
     }
 }
 
+.booking_table_wrapper .form-control {
+    text-transform: none !IMPORTANT;
+}

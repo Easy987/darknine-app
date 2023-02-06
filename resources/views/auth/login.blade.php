@@ -14,7 +14,7 @@
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                         <div class="sub_title_section">
                             <ul class="sub_title">
-                                <li><a href="#"> Kezdőlap &nbsp; / &nbsp;</a></li>
+                                <li><a href="{{ route('darknine.app.index') }}"> Kezdőlap &nbsp; / &nbsp;</a></li>
                                 <li>fiók</li>
                             </ul>
                         </div>
@@ -74,8 +74,8 @@
                                     </span>
                                 @enderror
 
-                                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email cím" required="" autofocus="">
-                                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Jelszó" required="">
+                                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email cím" required="required" autofocus="">
+                                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Jelszó" required="required">
 
                                 <br>
                                 <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Bejelentkezés</button>
@@ -92,5 +92,5 @@
     </div>
 </div>
 
-<div class="row" style="padding-bottom: 200px;"></div>
+<div class="row" style="padding-bottom: 300px;"></div>
 @endsection

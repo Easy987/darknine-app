@@ -24,8 +24,11 @@
             <div class="col-md-12 col-lg-12">
                 <div class="club-couture_news_field">
                     <div class="club-couture_newsletter_field">
-                        <input type="text" placeholder="Email címed">
-                        <button type="submit">feliratkozom</button>
+                        <form method="POST" action="{{ route('darknine.app.subscribe') }}">
+                            @csrf
+                            <input type="email" name="email" placeholder="Email cím">
+                            <button type="submit">feliratkozom</button>
+                        </form>
                     </div>
                 </div>
             </div>
