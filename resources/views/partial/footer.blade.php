@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="footer_about_content">
                     <div class="footer_img_logo">
-                        <a href="#"><img src="assets/images/logo2.png" class="img-responsive" alt="logo"/></a>
+                        <a href="#"><img src="{{ config('app.url') }}/assets/images/logo2.png" class="img-responsive" alt="logo"/></a>
                     </div>
                     <div class="footer_abotus_content">
                         <p>It is a long established fact that the reader wilcted by the readable cent of a the me page
@@ -22,7 +22,7 @@
                     <h4>latest news</h4>
                     <div class="blog_wrapper1">
                         <div class="blog_image">
-                            <img src="assets/images/ft_blog1.png" class="img-responsive" alt="blog-img1_img"/>
+                            <img src="{{ config('app.url') }}/assets/images/ft_blog1.png" class="img-responsive" alt="blog-img1_img"/>
                         </div>
                         <div class="blog_text">
                             <h5><a href="#">Lorem Night club
@@ -32,7 +32,7 @@
                     </div>
                     <div class="blog_wrapper2">
                         <div class="blog_image">
-                            <img src="assets/images/ft_blog2.png" class="img-responsive" alt="blog-img2_img"/>
+                            <img src="{{ config('app.url') }}/assets/images/ft_blog2.png" class="img-responsive" alt="blog-img2_img"/>
                         </div>
                         <div class="blog_text">
                             <h5><a href="#">Lorem Night club
@@ -48,15 +48,15 @@
                     <div class="footer_gallary">
                         <div class="row">
                             <ul>
-                                <li><img src="assets/images/ft1.png" alt="img" class="img-responsive">
+                                <li><img src="{{ config('app.url') }}/assets/images/ft1.png" alt="img" class="img-responsive">
                                 </li>
-                                <li><img src="assets/images/ft2.png" alt="img" class="img-responsive">
+                                <li><img src="{{ config('app.url') }}/assets/images/ft2.png" alt="img" class="img-responsive">
                                 </li>
-                                <li><img src="assets/images/ft3.png" alt="img" class="img-responsive">
+                                <li><img src="{{ config('app.url') }}/assets/images/ft3.png" alt="img" class="img-responsive">
                                 </li>
-                                <li><img src="assets/images/ft4.png" alt="img" class="img-responsive"></li>
-                                <li><img src="assets/images/ft5.png" alt="img" class="img-responsive"></li>
-                                <li><img src="assets/images/ft6.png" alt="img" class="img-responsive"></li>
+                                <li><img src="{{ config('app.url') }}/assets/images/ft4.png" alt="img" class="img-responsive"></li>
+                                <li><img src="{{ config('app.url') }}/assets/images/ft5.png" alt="img" class="img-responsive"></li>
+                                <li><img src="{{ config('app.url') }}/assets/images/ft6.png" alt="img" class="img-responsive"></li>
                             </ul>
                         </div>
                     </div>
@@ -109,35 +109,35 @@
 </div>
 <!--footer section end -->
 <!--custom js files-->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/modernizr.js"></script>
-<script src="assets/js/jquery.menu-aim.js"></script>
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.js"></script>
-<script src="assets/js/jquery.countTo.js"></script>
-<script src="assets/js/jquery.inview.min.js"></script>
-<script src="assets/js/jquery.downCount.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/plugin/rs_slider/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/js/plugin/rs_slider/jquery.themepunch.tools.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.addon.snow.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.actions.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.carousel.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.kenburn.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.migration.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.navigation.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.parallax.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.slideanims.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.extension.video.min.js"></script>
-<script src="assets/js/plugin/rs_slider/revolution.addon.snow.min.js"></script>
-<script src="assets/js/player.js"></script>
-<script src="assets/js/slider.js"></script>
-<script src="assets/js/music.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/toastify.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/bootstrap.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/modernizr.js"></script>
+<script src="{{ config('app.url') }}/assets/js/jquery.menu-aim.js"></script>
+<script src="{{ config('app.url') }}/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/jquery.magnific-popup.js"></script>
+<script src="{{ config('app.url') }}/assets/js/jquery.countTo.js"></script>
+<script src="{{ config('app.url') }}/assets/js/jquery.inview.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/jquery.downCount.js"></script>
+<script src="{{ config('app.url') }}/assets/js/isotope.pkgd.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/owl.carousel.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/jquery.themepunch.revolution.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/jquery.themepunch.tools.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.addon.snow.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.actions.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.carousel.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.kenburn.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.layeranimation.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.migration.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.navigation.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.parallax.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.slideanims.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.extension.video.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/plugin/rs_slider/revolution.addon.snow.min.js"></script>
+<script src="{{ config('app.url') }}/assets/js/player.js"></script>
+<script src="{{ config('app.url') }}/assets/js/slider.js"></script>
+<script src="{{ config('app.url') }}/assets/js/music.js"></script>
+<script src="{{ config('app.url') }}/assets/js/custom.js"></script>
+<script src="{{ config('app.url') }}/assets/js/toastify.min.js"></script>
 <!-- custom js-->
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyDOogBL2cC0dSezucKzQGWxMIMmclqWNts&sensor=false"></script>
 <script>

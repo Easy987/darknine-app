@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
                     <div class="dmx_heading_wraper">
-                        <img src="assets/images/head3.png" alt="img">
+                        <img src="{{ config('app.url') }}/assets/images/head3.png" alt="img">
                         <h2>a klubról</h2>
                         <div class="bars bars2">
                             <div class="bar"></div>
@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
                     <div class="dmx_heading_wraper">
-                        <img src="assets/images/head9.png" alt="img">
+                        <img src="{{ config('app.url') }}/assets/images/head9.png" alt="img">
                         <h2>amivel várunk téged</h2>
                         <div class="bars bars2">
                             <div class="bar"></div>
@@ -94,7 +94,7 @@
                     <div class="offer_content_wrapper dm_cover">
                         <div class="offer_left_content_wrapper dm_cover">
                             <div class="offer_set_img">
-                                <img src="assets/images/new/place/dance_floors.jpg" alt="img" class="img-responsive">
+                                <img src="{{ config('app.url') }}/assets/images/new/place/dance_floors.jpg" alt="img" class="img-responsive">
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">Tánctermek</a></h1>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="offer_left_content_wrapper dm_cover">
                             <div class="offer_set_img">
-                                <img src="assets/images/new/place/bars.jpg" alt="img" class="img-responsive">
+                                <img src="{{ config('app.url') }}/assets/images/new/place/bars.jpg" alt="img" class="img-responsive">
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">Bárok</a></h1>
@@ -112,7 +112,7 @@
                         </div>
                         <div class="offer_left_content_wrapper dm_cover">
                             <div class="offer_set_img">
-                                <img src="assets/images/new/place/resting_room.jpg" alt="img" class="img-responsive">
+                                <img src="{{ config('app.url') }}/assets/images/new/place/resting_room.jpg" alt="img" class="img-responsive">
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">Pihenőszoba</a></h1>
@@ -125,7 +125,7 @@
                     <div class="offer_content_wrapper dm_cover">
                         <div class="offer_left_content_wrapper dm_cover">
                             <div class="offer_set_img">
-                                <img src="assets/images/offer4.png" alt="img" class="img-responsive">
+                                <img src="{{ config('app.url') }}/assets/images/offer4.png" alt="img" class="img-responsive">
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">VIP szoba</a></h1>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="offer_left_content_wrapper dm_cover">
                             <div class="offer_set_img">
-                                <img src="assets/images/offer5.png" alt="img" class="img-responsive">
+                                <img src="{{ config('app.url') }}/assets/images/offer5.png" alt="img" class="img-responsive">
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">Ruhatár</a></h1>
@@ -143,7 +143,7 @@
                         </div>
                         <div class="offer_left_content_wrapper dm_cover">
                             <div class="offer_set_img">
-                                <img src="assets/images/offer6.png" alt="img" class="img-responsive">
+                                <img src="{{ config('app.url') }}/assets/images/offer6.png" alt="img" class="img-responsive">
                             </div>
                             <div class="offer_right_content_box">
                                 <h1><a href="javascript:void(0);">Tokenek</a></h1>
@@ -216,7 +216,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
                     <div class="dmx_heading_wraper">
-                        <img src="assets/images/head10.png" alt="img">
+                        <img src="{{ config('app.url') }}/assets/images/head10.png" alt="img">
                         <h2>Our night club dj’s</h2>
                         <div class="bars bars2 bar5">
                             <div class="bar"></div>
@@ -242,11 +242,11 @@
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="portfolio_item">
-                        <img src="assets/images/nt1.png" alt="">
+                        <img src="{{ config('app.url') }}/assets/images/nt1.png" alt="">
                         <div class="portfolio_hover">
 
                             <div class="zoom_popup">
-                                <a class="img-link" href="assets/images/nt1.png"> <i class="flaticon-add-button"></i>
+                                <a class="img-link" href="{{ config('app.url') }}/assets/images/nt1.png"> <i class="flaticon-add-button"></i>
                                 </a>
                             </div>
                         </div>
@@ -254,11 +254,11 @@
                 </div>
                 <div class="item">
                     <div class="portfolio_item">
-                        <img src="assets/images/nt2.png" alt="">
+                        <img src="{{ config('app.url') }}/assets/images/nt2.png" alt="">
                         <div class="portfolio_hover">
 
                             <div class="zoom_popup">
-                                <a class="img-link" href="assets/images/nt2.png"> <i class="flaticon-add-button"></i>
+                                <a class="img-link" href="{{ config('app.url') }}/assets/images/nt2.png"> <i class="flaticon-add-button"></i>
                                 </a>
                             </div>
                         </div>
@@ -266,11 +266,11 @@
                 </div>
                 <div class="item">
                     <div class="portfolio_item">
-                        <img src="assets/images/nt3.png" alt="">
+                        <img src="{{ config('app.url') }}/assets/images/nt3.png" alt="">
                         <div class="portfolio_hover">
 
                             <div class="zoom_popup">
-                                <a class="img-link" href="assets/images/nt3.png"> <i class="flaticon-add-button"></i>
+                                <a class="img-link" href="{{ config('app.url') }}/assets/images/nt3.png"> <i class="flaticon-add-button"></i>
                                 </a>
                             </div>
                         </div>
@@ -278,11 +278,11 @@
                 </div>
                 <div class="item">
                     <div class="portfolio_item">
-                        <img src="assets/images/nt4.png" alt="">
+                        <img src="{{ config('app.url') }}/assets/images/nt4.png" alt="">
                         <div class="portfolio_hover">
 
                             <div class="zoom_popup">
-                                <a class="img-link" href="assets/images/nt4.png"> <i class="flaticon-add-button"></i>
+                                <a class="img-link" href="{{ config('app.url') }}/assets/images/nt4.png"> <i class="flaticon-add-button"></i>
                                 </a>
                             </div>
                         </div>

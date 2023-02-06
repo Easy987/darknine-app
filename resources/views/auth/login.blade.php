@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
                 <div class="dmx_heading_wraper">
-                    <img src="assets/images/head3.png" alt="img">
+                    <img src="{{ config('app.url') }}/assets/images/head3.png" alt="img">
                     <h2>bejelentkezés</h2>
                     <div class="bars bars2">
                         <div class="bar"></div>
@@ -77,8 +77,9 @@
                                 <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email cím" required="" autofocus="">
                                 <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Jelszó" required="">
 
+                                <br>
                                 <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Bejelentkezés</button>
-                                <a href="#" id="forgot_pswd">Elfelejtett jelszó?</a>
+                                <a href="{{ route('password.request') }}" id="forgot_pswd">Elfelejtett jelszó?</a>
                                 <hr>
                                 <!-- <p>Don't have an account!</p>  -->
                                 <a href="{{ route('darknine.app.auth.showRegistrationForm') }}"><button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Új fiók létrehozása</button></a>

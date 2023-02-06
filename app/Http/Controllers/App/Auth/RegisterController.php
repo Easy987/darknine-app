@@ -66,6 +66,6 @@ class RegisterController extends Controller
 
     protected function registered(Request $request, $user)
     {
-        Session::flash('alert-success', 'Sikeres regisztráció! Kérlek erősítsd meg a fiókodat az emailben található link segítségével.');
+        Session::flash('alert-success', 'Sikeres regisztráció. Kérlek erősítsd meg a fiókodat az emailben található link segítségével.');
     }
 }

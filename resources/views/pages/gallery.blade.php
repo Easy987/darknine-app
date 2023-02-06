@@ -46,7 +46,7 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
                 <div class="dmx_heading_wraper">
-                    <img src="assets/images/head4.png" alt="img">
+                    <img src="{{ config('app.url') }}/assets/images/head4.png" alt="img">
                     <h2>tartalmak</h2>
                     <div class="bars bars2">
                         <div class="bar"></div>

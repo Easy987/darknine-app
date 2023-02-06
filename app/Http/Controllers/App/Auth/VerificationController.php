@@ -34,7 +34,7 @@ class VerificationController extends Controller
 
     protected function verified(Request $request)
     {
-        Session::flash('alert-success', 'Fiók sikeresen megerősítve!');
+        Session::flash('alert-success', 'Fiók sikeresen megerősítve.');
         Auth::guard()->login($request->user());
     }
 }

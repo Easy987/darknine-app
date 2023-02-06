@@ -15,30 +15,30 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css?version=<?=config('app.version')?>"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/player.css?version=<?=config('app.version')?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/toastify.min.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/animate.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/bootstrap.min.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/fonts.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/flaticon.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/font-awesome.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/magnific-popup.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/style.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/responsive.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/reset.css?version=<?=config('app.version')?>"/>
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/owl.carousel.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/player.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/assets/css/toastify.min.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css"
-          href="assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
+          href="{{ config('app.url') }}/assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css"
-          href="assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
+          href="{{ config('app.url') }}/assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css"
-          href="assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
+          href="{{ config('app.url') }}/assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
     <!--favicon-->
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ config('app.url') }}/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ config('app.url') }}/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ config('app.url') }}/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ config('app.url') }}/assets/images/favicon/site.webmanifest">
 </head>

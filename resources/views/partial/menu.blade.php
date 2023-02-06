@@ -19,7 +19,7 @@
             <div class="col-md-6">
                 <div class="cp_logo_wrapper">
                     <a href="javascript:void(0);">
-                        <img src="assets/images/new/logo/logo_64.png" alt="logo">
+                        <img src="{{ config('app.url') }}/assets/images/new/logo/logo_64.png" alt="logo">
                         D9 Dark Nine
                     </a>
                 </div>
@@ -71,7 +71,7 @@
                 <li><a href="{{ route('darknine.app.about') }}" class="gc_main_navigation">rólunk</a></li>
                 <li><a href="{{ route('darknine.app.gallery') }}" class="gc_main_navigation">galéria</a></li>
                 <li class="logo_desing_wrapper index2_logo_wrapper">
-                    <a href="javascript:void(0);"><img src="assets/images/new/logo/logo.png" style="height: 64px;" alt="img"></a>
+                    <a href="javascript:void(0);"><img src="{{ config('app.url') }}/assets/images/new/logo/logo.png" style="height: 64px;" alt="img"></a>
                 </li>
                 <li><a href="https://www.facebook.com/D9.club.bp" target="_blank"
                        class="gc_main_navigation">események</a></li>

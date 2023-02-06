@@ -10,12 +10,12 @@
                 <!-- SLIDE  -->
                 <li data-index="rs-407" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="2000"
-                    data-thumb="assets/images/blur1-100x50.jpg" data-rotate="0" data-fstransition="fade"
+                    data-thumb="{{ config('app.url') }}/assets/images/blur1-100x50.jpg" data-rotate="0" data-fstransition="fade"
                     data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" data-title="One"
                     data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                     data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/new/carousel/hall_1.jpg" alt="" data-bgposition="center center" data-kenburns="on"
+                    <img src="{{ config('app.url') }}/assets/images/new/carousel/hall_1.jpg" alt="" data-bgposition="center center" data-kenburns="on"
                          data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100"
                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                          data-bgparallax="6" class="rev-slidebg" data-no-retina>
@@ -109,11 +109,11 @@
                 <!-- SLIDE  -->
                 <li data-index="rs-408" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="2000"
-                    data-thumb="assets/images/blur1-100x50.jpg" data-rotate="0" data-saveperformance="off"
+                    data-thumb="{{ config('app.url') }}/assets/images/blur1-100x50.jpg" data-rotate="0" data-saveperformance="off"
                     data-title="Two" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
                     data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/new/carousel/hall_2.jpg" alt="" data-bgposition="center center" data-kenburns="on"
+                    <img src="{{ config('app.url') }}/assets/images/new/carousel/hall_2.jpg" alt="" data-bgposition="center center" data-kenburns="on"
                          data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100"
                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                          data-bgparallax="6" class="rev-slidebg" data-no-retina>
@@ -206,11 +206,11 @@
                 <!-- SLIDE  -->
                 <li data-index="rs-409" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="2000"
-                    data-thumb="assets/images/blur1-100x50.jpg" data-rotate="0" data-saveperformance="off"
+                    data-thumb="{{ config('app.url') }}/assets/images/blur1-100x50.jpg" data-rotate="0" data-saveperformance="off"
                     data-title="Three" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
                     data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/new/carousel/hall_3.jpg" alt="" data-bgposition="center center" data-kenburns="on"
+                    <img src="{{ config('app.url') }}/assets/images/new/carousel/hall_3.jpg" alt="" data-bgposition="center center" data-kenburns="on"
                          data-duration="20000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100"
                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                          data-bgparallax="6" class="rev-slidebg" data-no-retina>
@@ -352,7 +352,7 @@
 
             <div class="col-md-12 col-lg-6 col-sm-12">
                 <div class="video_player_wrapper index2_video_Wrapper">
-                    <img src="assets/images/new/place/outside.jpg" alt="img" class="img-responsive">
+                    <img src="{{ config('app.url') }}/assets/images/new/place/outside.jpg" alt="img" class="img-responsive">
                 </div>
             </div>
         </div>
