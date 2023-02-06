@@ -6,8 +6,13 @@ use App\Http\Controllers\App\UserController;
 use App\Http\Controllers\App\GalleryController;
 use App\Http\Controllers\App\Auth\SocialController;
 use App\Http\Controllers\App\Auth\RegisterController;
+use App\Http\Controllers\App\Auth\VerificationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
+Route::get('auth/email/megerosites', [VerificationController::class, 'show'])->name('verification.notice');
+Route::get('auth/email/megerosites/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
+Route::post('auth/email/ujrakuldes', [VerificationController::class, 'resend'])->name('verification.resend');
 
 Route::name('darknine.app.')->group(function() {
     Route::get('/', [PageController::class, 'index'])->name('index');
@@ -33,9 +38,5 @@ Route::name('darknine.app.')->group(function() {
         });
     });
 
-    /*Route::get('/bejelentkezes', [\App\Http\Controllers\App\UserController::class, 'showLoginForm']);
-    Route::get('/regisztracio', [\App\Http\Controllers\App\UserController::class, 'showRegisterForm']);*/
 });
-
-Auth::routes();
 

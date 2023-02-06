@@ -360,4 +360,5 @@
 </div>
 <!-- booking table wrapper end-->
 @include('partial.newsletter')
+
 @endsection

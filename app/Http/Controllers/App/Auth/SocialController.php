@@ -53,6 +53,16 @@ class SocialController extends Controller
                     return redirect()->route(RouteServiceProvider::LOGIN)->withErrors($validator);
                 }
 
+                $userExists = User::where('email', $socialUserEmail)->whereNull('social_id')->exists();
+                if($userExists) {
+                    $validator = Validator::make([], [
+                        'email' => 'required'
+                    ], [
+                        'email.required' => 'A megadott fiókhoz manuális regisztráció tartozik. Kérjük, jelentkezz be email címmel és jelszóval!'
+                    ]);
+                    return redirect()->route(RouteServiceProvider::LOGIN)->withErrors($validator);
+                }
+
                 $createdUser = User::create([
                     'name' => $socialUser->getName(),
                     'email' => $socialUserEmail,
@@ -64,7 +74,12 @@ class SocialController extends Controller
                 Auth::login($createdUser);
                 return redirect()->route(RouteServiceProvider::HOME);
             } catch (\Exception $exception) {
-                dd($exception->getMessage());
+                $validator = Validator::make([], [
+                    'email' => 'required'
+                ], [
+                    'email.required' => 'Hiba történt a bejelentkezés során.'
+                ]);
+                return redirect()->route(RouteServiceProvider::LOGIN)->withErrors($validator);
             }
         }
     }

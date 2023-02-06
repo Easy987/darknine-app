@@ -137,6 +137,7 @@
 <script src="assets/js/slider.js"></script>
 <script src="assets/js/music.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/toastify.min.js"></script>
 <!-- custom js-->
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyDOogBL2cC0dSezucKzQGWxMIMmclqWNts&sensor=false"></script>
 <script>
@@ -215,5 +216,37 @@
         }
     }
 </script>
+@foreach (['error', 'warning', 'success', 'info'] as $msg)
+    @if(Session::has('alert-' . $msg))
+    <script>
+        $(document).ready(function() {
+            Toastify({
+                text: "{{ Session::get('alert-' . $msg) }}",
+                duration: 3000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    @switch($msg)
+                        @case('error')
+                            background: "linear-gradient(90deg, rgba(184,0,0,1) 0%, rgba(129,0,0,1) 100%)",
+                            @break
+                        @case('warning')
+                            background: "linear-gradient(90deg, rgba(180,184,0,1) 0%, rgba(180,178,0,1) 100%)",
+                            @break
+                        @case('success')
+                            background: "linear-gradient(90deg, rgba(0,150,12,1) 0%, rgba(0,79,21,1) 100%)",
+                            @break
+                        @case('info')
+                            background: "linear-gradient(90deg, rgba(0,151,255,1) 0%, rgba(0,87,184,1) 100%)",
+                            @break
+                    @endswitch
+                },
+            }).showToast();
+        });
+    </script>
+    @endif
+@endforeach
 </body>
 </html>

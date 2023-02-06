@@ -27,13 +27,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css" href="assets/css/player.css?version=<?=config('app.version')?>">
+    <link rel="stylesheet" type="text/css" href="assets/css/toastify.min.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css"
           href="assets/js/plugin/rs_slider/layers.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css"
           href="assets/js/plugin/rs_slider/navigation.css?version=<?=config('app.version')?>">
     <link rel="stylesheet" type="text/css"
           href="assets/js/plugin/rs_slider/settings.css?version=<?=config('app.version')?>">
-
     <!--favicon-->
 
 

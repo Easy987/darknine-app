@@ -73,7 +73,7 @@
                                 <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Jelszó" required="">
                                 <input type="password" id="inputPassword" name="password_confirmation" class="form-control" placeholder="Jelszó megerősítése" required="">
 
-                                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Regisztráció</button>
+                                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-user-plus"></i> Regisztráció</button>
                                 <a href="{{ route('darknine.app.auth.showLoginForm') }}" id="forgot_pswd">Inkább bejelentkeznél?</a>
                                 <hr>
                             </form>
