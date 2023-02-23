@@ -1,0 +1,62 @@
+version: '3'
+services:
+    #Laravel App
+    app:
+        build:
+            args:
+                user: www
+                uid: 1000
+            context: .
+            dockerfile: docker/dockerfiles/app/Dockerfile
+        image: digitalocean.com/php
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "9000:9000"
+        deploy:
+            replicas: 1
+        environment:
+            SERVICE_NAME: app
+            SERVICE_TAGS: dev
+        working_dir: /var/www/html
+        volumes:
+            - ./:/var/www/html
+
+    #Nginx Service
+    nginx:
+        image: nginx:alpine
+        container_name: nginx
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./:/var/www/html
+            - ./docker/config/nginx/conf.d/:/etc/nginx/conf.d/
+            - ./docker/config/nginx/ssl/:/etc/nginx/ssl/
+        networks:
+            - internal
+
+    #MySQL Service
+    db:
+        image: mysql:5.7.16
+        container_name: db
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: darknine
+            MYSQL_USER: darknine
+            MYSQL_PASSWORD: darknine
+            MYSQL_ROOT_PASSWORD: darknine
+        volumes:
+            - ./docker/data/mysql:/var/lib/mysql/
+        networks:
+            - internal
+
+#Docker Networks
+networks:
+    internal:
+        driver: bridge
