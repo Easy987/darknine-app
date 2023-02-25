@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12 col-12">
                     <div class="booking_form_field" style="text-transform: none;">
-                        {{ auth()->user()->balanceInt }}
+                        {!! $dailyQRCode !!}
                     </div>
                 </div>
             </div>
