@@ -15,9 +15,10 @@ class UserController extends Controller
     public function index()
     {
         if (auth()->check()) {
-            $dailyQRCode = $this->QRCodeGeneratorService->generateDailyQRCode(auth()->user());
+            $user = auth()->user();
+            $entryQrCode = $this->QRCodeGeneratorService->generateEntryQRCode($user);
 
-            return view('user.profile')->with('dailyQRCode', $dailyQRCode);
+            return view('user.profile', compact('user', 'entryQrCode'));
         }
 
         return redirect()->route(RouteServiceProvider::LOGIN);

@@ -1,3 +1,42 @@
+@section('header')
+    <style>
+        .avg {
+            font-size:77px;
+            padding-top: 20px;
+            color:#5CB85C;
+        }
+
+        .details {
+            min-height: 355px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .rating {
+            padding-left:40px;
+        }
+
+        .skillLine {
+            display:inline-block;
+            width:100%;
+            padding: 3px 4px;
+        }
+
+        .skills {
+            text-decoration:underline;
+        }
+
+        div.skill {
+            background: #F58723;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            padding: 3px 4px;
+            width:70px;
+        }
+    </style>
+@endsection
+
 @extends('layouts.app')
 
 @section('content')
@@ -47,7 +86,26 @@
                 </div>
                 <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12 col-12">
                     <div class="booking_form_field" style="text-transform: none;">
-                        {!! $dailyQRCode !!}
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-offset-2 col-lg-offset-3 col-lg-8">
+                                    <div class="well details">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-8">
+                                                <h2 style="text-decoration:underline;">{{ $user->getName() }}</h2>
+                                                <p><strong>Rang: </strong>{{ __('auth.roles.' . $user->getRoleName()) }}</p>
+                                                <p><strong>Egyenleg: </strong>{{ $user->getWalletBalance('points') }} pont</p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-lg-1 text-center">
+                                            <figure>
+                                                    <div id="qrcode">{!! $entryQrCode !!}</div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

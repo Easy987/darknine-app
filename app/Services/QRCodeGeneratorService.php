@@ -8,11 +8,11 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class QRCodeGeneratorService
 {
-    public function generateDailyQRCode(User $user)
+    public function generateEntryQRCode(User $user)
     {
         $data = [
             'type' => 'DAILY',
-            'user_id' => $user->id,
+            'user_id' => $user->getId(),
             'amount' => 1,
             'wallet' => 'points',
             'datetime' => now()
