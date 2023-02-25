@@ -11,8 +11,6 @@ services:
         image: digitalocean.com/php
         restart: unless-stopped
         tty: true
-        ports:
-            - "9000:9000"
         deploy:
             replicas: 1
         environment:
@@ -21,6 +19,8 @@ services:
         working_dir: /var/www/html
         volumes:
             - ./:/var/www/html
+        networks:
+            - internal
 
     #Nginx Service
     nginx:
